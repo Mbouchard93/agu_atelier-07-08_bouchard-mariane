@@ -1,0 +1,47 @@
+@import url(./locomotive-scroll.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --secondary-color : #F9F5F2;
+    --primary-color : #2E2D25;
+}
+
+section {
+    height: 100vh;
+    width: 90%;
+    display: flex;
+}
+
+.wrapper--img, .wrapper--content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.wrapper--img img {
+    width: 70%;
+    height: auto;
+}
+
+.wrapper--content {
+align-items: start;
+position: relative;
+padding-right: 2rem;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+
+
+    padding: 2rem;
+    gap: 2rem;
+}

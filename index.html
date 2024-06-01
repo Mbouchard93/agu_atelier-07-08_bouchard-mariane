@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/locomotive.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locomotive scroll</title>
+    <script type="module" src="./src/js/main.js" defer></script>
+  </head>
+
+  <body data-scroll-container>
+    <section>
+      <div class="wrapper--img">
+        <img src="./src/img/paysage.png" alt="">
+      </div>
+      <div class="wrapper--content">
+        <h2>Data scroll speed 2</h2>
+        <p data-scroll data-scroll-speed="2">L’attribut data-scroll-speed de Locomotive Scroll est utilisé pour modifier la vitesse de défilement d’un élément spécifique par rapport à la vitesse de défilement normale de la page.
+
+          La valeur de data-scroll-speed est un nombre qui peut être positif ou négatif. Une valeur positive fera défiler l’élément plus rapidement que le reste de la page, tandis qu’une valeur négative le fera défiler plus lentement. Par exemple, data-scroll-speed="2" fera défiler l’élément deux fois plus vite que le reste de la page.</p>
+      </div>
+    </section>
+    <section>
+      <div class="wrapper--img">
+        <img src="./src/img/pay2.jpg" alt="">
+      </div>
+      <div class="wrapper--content">
+        <h2>Data scroll direction horizontal</h2>
+        <p data-scroll data-scroll-speed="1" data-scroll-direction="horizontal" >L’attribut data-scroll-direction="horizontal" de Locomotive Scroll est utilisé pour modifier la direction de défilement d’un élément spécifique. Par défaut, le défilement se fait verticalement, mais avec cet attribut, vous pouvez faire défiler l’élément horizontalement.</p>
+      </div>
+    </section>
+    <section>
+      <div class="wrapper--img">
+        <img data-scroll-offset="10 , 40%" data-scroll data-scroll-speed="1" src="./src/img/pay3.jpg" alt="">
+      </div>
+      <div class="wrapper--content">
+        <h2>Data-scroll-offset</h2>
+        <p data-scroll-offset="100,50%" data-scroll data-scroll-speed="2">L’attribut data-scroll-offset de Locomotive Scroll est utilisé pour décaler le début et la fin de l’animation de défilement d’un élément spécifique. Il prend deux valeurs, séparées par une virgule. La première valeur est le décalage du début de l’animation et la deuxième valeur est le décalage de la fin de l’animation. </p>
+      <p>Les valeurs peuvent être en pixels (par exemple, “100,200”) ou en pourcentage de la hauteur du viewport (par exemple, “10%,20%”). Un décalage positif retardera le début de l’animation et avancera la fin de l’animation.</p>
+   
+      </div>
+    </section>
+    <section id="sec01">
+      <div class="wrapper--img">
+        <img data-scroll-sticky data-scroll id="sticky" data-scroll-speed="2" data-scroll-target="#sec01" src="./src/img/route.jpg" alt="">
+      </div>
+      <div class="wrapper--content">
+        <h2>Data scroll sticky</h2>
+        <p>L’attribut data-scroll-sticky de Locomotive Scroll permet à un élément de rester fixe (ou “collant”) dans la fenêtre d’affichage (viewport) pendant que l’élément cible est à l’écran. En utilisant un identifiant (ID), on spécifie l’élément qui déclenche le début de l’effet “collant”. Cet effet persiste tant que l’élément cible reste visible dans la fenêtre d’affichage</p>
+      </div>
+    </section>
+    <section >
+      <div class="wrapper--img">
+        <img data-scroll-position="bottom" data-scroll data-scroll-speed="5"  src="./src/img/pay4.jpg" alt="">
+      </div>
+      <div class="wrapper--content">
+        <h2 >Data scoll position</h2>
+        <p>L’attribut data-scroll-position de Locomotive Scroll est utilisé pour déterminer la position de la fenêtre (viewport) où l’animation de l’élément doit être déclenchée. Il prend une chaîne de caractères en entrée qui peut être “top”, “bottom”, “left” ou "right"</p>
+      </div >
+    </section>
+    <section class="presentation">
+      <h2>Présentation</h2>
+      <h3>Origine de la bibliothèque</h3>
+      <p>LocomotiveScroll.js est une bibliothèque JavaScript développée par l’agence de création Locomotive basée à Montréal.</p>
+      <h3>Fonctionnement de la librairie</h3>
+      <p>LocomotiveScroll.js fournit une détection des éléments dans le viewport et un défilement fluide avec des effets de parallaxe. Elle offre également la possibilité de déclencher des écouteurs d’événements lorsque des éléments sont dans le viewport.</p>
+      <h3>Exemple de code</h3>
+      <p>Je démontre des exemple de code tout au long de la présentation</p>
+      <h3>Point fort</h3>
+      <ul>
+        <li>Défilement fluide </li>
+        <li>Effet de parallaxe</li>
+        <li>Facilité d'utilisation</li>
+      </ul>
+      <h3>Point à améliorer</h3>
+      <p>La documentation en ligne sur ce sujet est plutôt limitée, et les explications sur son utilisation sur GitHub laissent à désirer. Tu n’as pas forcément toutes les informations à ta disposition pour faire fonctionner le défilement. Par exemple, pour appliquer un effet de défilement à un élément, tu dois absolument utiliser data-scroll et data-speed. Sinon, l’effet ne fonctionne pas. Cette information n’est pas clairement indiquée. </p>
+    </section>
+  </body>
+</html>
